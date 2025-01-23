@@ -19,4 +19,5 @@ This repo contains sample data and code stubs for a number of assignments relate
 A quick and easy way is using UV.
 
 1. First install [UV](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) (you don't need to have Python installed for this).
-2. Use uv cli to [install](https://github.com/astral-sh/uv?tab=readme-ov-file#python-management) a specific python version, e.g. `uv python install 3.10`.
+2. Use uv cli to [install](https://github.com/astral-sh/uv?tab=readme-ov-file#python-management) a specific python version, e.g. `uv python install`. UV will check the [.python-version](.python-version) file.
+3. Next use `uv sync` sync command to create a virtual environment containing the dependencies found in the **uv.lock** file.
